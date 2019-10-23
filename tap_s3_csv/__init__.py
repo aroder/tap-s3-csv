@@ -61,9 +61,9 @@ def do_sync(config, catalog, state):
 
 def validate_table_config(config):
   # Parse the incoming tables config as JSON
-  tables_config = json.loads(config['tables'])
+#   tables_config = json.loads(config['tables'])
 
-  for table_config in tables_config:
+  for table_config in config['tables']:
     if table_config.get('key_properties') == "" or table_config.get('key_properties') is None:
       table_config['key_properties'] = []
     elif table_config.get('key_properties'):
@@ -77,7 +77,7 @@ def validate_table_config(config):
                                         for s in table_config['date_overrides'].split(',')]
 
   # Reassign the config tables to the validated object
-  return CONFIG_CONTRACT(tables_config)
+  return CONFIG_CONTRACT(config['tables'])
 
 
 @singer.utils.handle_top_exception(LOGGER)
