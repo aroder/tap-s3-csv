@@ -13,7 +13,7 @@ from botocore.credentials import (
 from botocore.exceptions import ClientError
 from botocore.session import Session
 from singer_encodings import csv
-from tap_s3_csv import conversion
+import conversion
 
 LOGGER = singer.get_logger()
 
@@ -59,7 +59,7 @@ def setup_aws_client(config):
         extra_args={
             'DurationSeconds': 3600,
             'RoleSessionName': 'TapS3CSV',
-            'ExternalId': config['external_id']
+            # 'ExternalId': config['external_id']
         },
         cache=JSONFileCache()
     )

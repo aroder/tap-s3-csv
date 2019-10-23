@@ -1,0 +1,17 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Python: Current File",
+            "type": "python",
+            "request": "launch",
+            "program": "${workspaceFolder}/tap_s3_csv/__init__.py",
+            "console": "integratedTerminal",
+            "args": ["--config", "test/config/test.config", "--catalog", "catalog.json"]
+            // "args": ["--config", "test/config/test.config", "--discover"]
+        }
+    ]
+}

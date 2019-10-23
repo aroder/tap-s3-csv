@@ -13,7 +13,7 @@ setup(name='tap-s3-csv',
           'backoff==1.3.2',
           'boto3==1.9.57',
           'singer-encodings==0.0.3',
-          'singer-python==5.1.5',
+          'singer-python==5.8.1',
           'voluptuous==0.10.5'
       ],
       extras_require={
