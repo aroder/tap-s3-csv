@@ -13,7 +13,7 @@ from botocore.credentials import (
 from botocore.exceptions import ClientError
 from botocore.session import Session
 from singer_encodings import csv
-import conversion
+from tap_s3_csv import conversion
 
 LOGGER = singer.get_logger()
 

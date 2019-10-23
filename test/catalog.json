@@ -1,0 +1,353 @@
+{
+    "streams": [
+        {
+            "stream": "profile_scores",
+            "tap_stream_id": "profile_scores",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "assessment_id": {
+                        "type": ["null", "string"]
+                    },
+                    "legacy_id": {
+                        "type": ["null", "integer", "string"]
+                    },
+                    "start_time": {
+                        "anyOf": [
+                            {
+                                "type": ["null", "string"],
+                                "format": "date-time"
+                            },
+                            {
+                                "type": ["null", "string"]
+                            }
+                        ]
+                    },
+                    "end_time": {
+                        "anyOf": [
+                            {
+                                "type": ["null", "string"],
+                                "format": "date-time"
+                            },
+                            {
+                                "type": ["null", "string"]
+                            }
+                        ]
+                    },
+                    "a": {
+                        "type": ["null", "integer", "string"]
+                    },
+                    "b": {
+                        "type": ["null", "integer", "string"]
+                    },
+                    "c": {
+                        "type": ["null", "integer", "string"]
+                    },
+                    "d": {
+                        "type": ["null", "integer", "string"]
+                    },
+                    "stress_a": {
+                        "type": ["null", "integer", "string"]
+                    },
+                    "stress_b": {
+                        "type": ["null", "integer", "string"]
+                    },
+                    "stress_c": {
+                        "type": ["null", "integer", "string"]
+                    },
+                    "stress_d": {
+                        "type": ["null", "integer", "string"]
+                    },
+                    "left_mode": {
+                        "type": ["null", "integer", "string"]
+                    },
+                    "lower_mode": {
+                        "type": ["null", "integer", "string"]
+                    },
+                    "right_mode": {
+                        "type": ["null", "integer", "string"]
+                    },
+                    "upper_mode": {
+                        "type": ["null", "integer", "string"]
+                    },
+                    "profile_code_a": {
+                        "type": ["null", "integer", "string"]
+                    },
+                    "profile_code_b": {
+                        "type": ["null", "integer", "string"]
+                    },
+                    "profile_code_c": {
+                        "type": ["null", "integer", "string"]
+                    },
+                    "profile_code_d": {
+                        "type": ["null", "integer", "string"]
+                    },
+                    "_sdc_source_bucket": {
+                        "type": "string"
+                    },
+                    "_sdc_source_file": {
+                        "type": "string"
+                    },
+                    "_sdc_source_lineno": {
+                        "type": "integer"
+                    },
+                    "_sdc_extra": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    }
+                }
+            },
+            "metadata": [
+                {
+                    "breadcrumb": [],
+                    "metadata": {
+                        "selected": true,
+                        "table-key-properties": ["assessment_id"]
+                    }
+                },
+                {
+                    "breadcrumb": ["properties", "assessment_id"],
+                    "metadata": {
+                        "inclusion": "automatic"
+                    }
+                },
+                {
+                    "breadcrumb": ["properties", "legacy_id"],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": ["properties", "start_time"],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": ["properties", "end_time"],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": ["properties", "a"],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": ["properties", "b"],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": ["properties", "c"],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": ["properties", "d"],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": ["properties", "stress_a"],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": ["properties", "stress_b"],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": ["properties", "stress_c"],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": ["properties", "stress_d"],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": ["properties", "left_mode"],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": ["properties", "lower_mode"],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": ["properties", "right_mode"],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": ["properties", "upper_mode"],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": ["properties", "profile_code_a"],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": ["properties", "profile_code_b"],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": ["properties", "profile_code_c"],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": ["properties", "profile_code_d"],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": ["properties", "_sdc_source_bucket"],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": ["properties", "_sdc_source_file"],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": ["properties", "_sdc_source_lineno"],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": ["properties", "_sdc_extra"],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                }
+            ]
+        },
+        {
+            "stream": "data_roles",
+            "tap_stream_id": "data_roles",
+            "schema": {
+                "type": "object",
+                "properties": {
+                    "assessment_id": {
+                        "type": ["null", "string"]
+                    },
+                    "data_role_id": {
+                        "type": ["null", "string"]
+                    },
+                    "parent_data_role_id": {
+                        "type": ["null", "string"]
+                    },
+                    "data_role": {
+                        "type": ["null", "string"]
+                    },
+                    "_sdc_source_bucket": {
+                        "type": "string"
+                    },
+                    "_sdc_source_file": {
+                        "type": "string"
+                    },
+                    "_sdc_source_lineno": {
+                        "type": "integer"
+                    },
+                    "_sdc_extra": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    }
+                }
+            },
+            "metadata": [
+                {
+                    "breadcrumb": [],
+                    "metadata": {
+                        "selected": true,
+                        "table-key-properties": [
+                            "assessment_id",
+                            "data_role_id"
+                        ]
+                    }
+                },
+                {
+                    "breadcrumb": ["properties", "assessment_id"],
+                    "metadata": {
+                        "inclusion": "automatic"
+                    }
+                },
+                {
+                    "breadcrumb": ["properties", "data_role_id"],
+                    "metadata": {
+                        "inclusion": "automatic"
+                    }
+                },
+                {
+                    "breadcrumb": ["properties", "parent_data_role_id"],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": ["properties", "data_role"],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": ["properties", "_sdc_source_bucket"],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": ["properties", "_sdc_source_file"],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": ["properties", "_sdc_source_lineno"],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                },
+                {
+                    "breadcrumb": ["properties", "_sdc_extra"],
+                    "metadata": {
+                        "inclusion": "available"
+                    }
+                }
+            ]
+        }
+    ]
+}

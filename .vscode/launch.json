@@ -9,8 +9,9 @@
             "type": "python",
             "request": "launch",
             "program": "${workspaceFolder}/tap_s3_csv/__init__.py",
+            // "program": "${workspaceFolder}/test/test.py",
             "console": "integratedTerminal",
-            "args": ["--config", "test/config/test.config", "--catalog", "catalog.json"]
+            "args": ["--config", "test/test.config", "--catalog", "test/catalog.json"]
             // "args": ["--config", "test/config/test.config", "--discover"]
         }
     ]

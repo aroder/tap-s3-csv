@@ -3,10 +3,10 @@ import sys
 import singer
 
 from singer import metadata
-from discover import discover_streams
-import s3
-from sync import sync_stream
-from config import CONFIG_CONTRACT
+from tap_s3_csv.discover import discover_streams
+from tap_s3_csv import s3
+from tap_s3_csv.sync import sync_stream
+from tap_s3_csv.config import CONFIG_CONTRACT
 
 LOGGER = singer.get_logger()
 
