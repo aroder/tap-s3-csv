@@ -17,6 +17,7 @@ def load_metadata(table_spec, schema):
     mdata = metadata.new()
 
     mdata = metadata.write(mdata, (), 'table-key-properties', table_spec['key_properties'])
+    mdata = metadata.write(mdata, (), 'selected', True)
 
     for field_name in schema.get('properties', {}).keys():
         if table_spec.get('key_properties', []) and field_name in table_spec.get('key_properties', []):
