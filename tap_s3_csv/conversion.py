@@ -89,8 +89,9 @@ def generate_schema(samples, table_spec):
             }
         else:
             types = ['null', datatype]
-            if datatype != 'string':
-                types.append('string')
+            # AdamR: I'm not sure why this was ever added, but having a integer and string in the same column is producing multiple columns in target-postgres (__s and __i suffixes) and sometimes errors
+            # if datatype != 'string':
+                # types.append('string')
             counts[key] = {
                 'type': types,
             }
